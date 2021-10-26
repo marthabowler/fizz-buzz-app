@@ -1,5 +1,5 @@
-const NextFizzBuzz = (arr: any[]) => {
-  let number = arr.length + 1;
+const NextFizzBuzz = (arr: (number | string)[]): (number | string)[] => {
+  const number = arr.length + 1;
   let arr2 = [];
   if (number % 15 === 0) {
     arr2 = [...arr, "FizzBuzz"];
